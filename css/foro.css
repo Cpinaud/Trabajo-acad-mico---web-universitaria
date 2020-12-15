@@ -1,0 +1,443 @@
+body, html {
+    height: 100%;
+    font-family: "Segoe UI", "Open Sans", Arial, sans-serif !important;
+    font-size: 80%;
+}
+
+header .usuario .avatar {
+    border-radius: 50%;
+    max-width: 50px;
+}
+
+.header-top {
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: .2rem .5rem;;
+
+}
+.header-top img{
+    max-width: 30%;
+}
+
+.mi-perfil{
+    display: none;
+}
+
+.usuario{
+    display: flex;
+}
+
+.nombre-menu{
+    display: flex;
+    flex-direction: column;
+    font-size: 12px;
+    justify-content: flex-end;
+}
+
+.nombre-menu p {
+    display: none;
+}
+
+.nombre-menu p{
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+.usuario ul {
+    list-style-type: none;
+    margin: 0;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    padding: 0;
+}
+
+.usuario ul li {
+    margin: 0 .1rem;
+    color: rgba(76, 175, 80, 1);
+
+}
+
+.usuario ul li a {
+    text-decoration: none;
+    color: rgba(76, 175, 80, 1);
+
+}
+
+.usuario ul li a:hover {
+    text-decoration: underline;
+}
+
+.header-bottom {
+    background-color: rgba(76, 175, 80, 1);
+    display: flex;
+    align-items: flex-start;
+}
+
+.home{
+    padding: .7rem;
+}
+
+.drop {
+    background-color: rgba(76, 175, 80, 1) !important;
+    border: none !important;
+    border-radius: 0px;
+}
+
+.drop:hover {
+    box-shadow: 2px 2px 5px #555;
+
+}
+
+main {
+    display: flex;
+    height: 100%;
+    width: 100%;
+}
+
+
+.menu-lateral {
+    display: none;
+}
+
+.menu-lateral a {
+    text-decoration: none !important;
+    color: white;
+    font-size: 15px;
+    padding-bottom: .3rem;
+    font-weight: lighter;
+}
+
+.menu-lateral a:hover {
+    text-decoration: underline !important;
+}
+
+.menu-lateral h2 {
+    font-weight: lighter;
+    padding-bottom: 1rem;
+}
+
+.menu-lateral img{
+    padding-right: .5rem;
+}
+
+
+
+.foro {
+    flex: 0 0 100%;
+    overflow-y: auto;
+}
+
+.foro h1{
+    font-weight: lighter;
+}
+
+.cabecera{
+    display: flex;
+    flex-direction: column;
+}
+
+.breadcrumb a{
+    color: rgba(76, 175, 80, 1);
+}
+
+.contenido-cabecera{
+    direction: flex;
+    justify-content: space-around;
+}
+
+.contenido-cabecera a{
+    text-decoration: none;
+    color:black;
+}
+
+.information{
+    display: flex;
+    flex-direction: column;
+    
+}
+.information .padding-margin-0{
+    display:none;
+    
+}
+
+.information p, .information h1{
+    padding:0;
+    margin:0;
+}
+
+.information p{
+    font-size: 13.5px;
+
+}
+
+.btn:focus{
+    box-shadow: none;
+}
+
+.botones-cabecera .boton{
+    display: none;    
+}
+
+.boton{
+    background-color: #9999;
+    border-radius: 0px;
+    border:none !important;
+}
+
+.primero a{
+    color:black;
+    text-decoration: none;
+}
+
+.final{
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 6rem;
+}
+
+.boton:hover{
+    box-shadow: 2px 2px 5px #555;
+
+}
+
+
+.btn-buscador{
+    border-radius:0 !important;
+    background-color: #555;
+
+}
+
+.btn-buscador:hover{
+    box-shadow: 2px 2px 5px #555;
+
+}
+
+.search{
+    border-radius:0px;
+    border: 0.5px solid black;
+    height: 40px;
+}
+
+.flotante {
+    display:scroll;
+    position:fixed;
+    bottom:40px;
+    right:20px;
+    z-index: 10000;
+}
+
+.flotante i {
+    color: rgba(76, 175, 80, 1) !important;
+    font-size: 3.5rem;
+    border:none !important;
+    box-shadow: 2px 2px 5px #555;
+    border-radius: 50%;
+    transform: scale(1);
+    transition: 0.3s;
+    background-color: white;
+}
+.flotante i:hover{
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+.mensaje {
+    border-top: #ccc 1px solid;
+    border-left: #ccc 1px solid;
+    margin-top: 1rem;
+    margin-left: 1rem;
+    width: 90%;
+    height: 20%;
+}
+
+
+.mensaje a{
+    color:black;
+}
+.mensaje .perfil {
+    text-align: center;
+}
+
+.perfil p{
+    padding: 0 1rem;
+    font-weight: bold;
+    margin:0;
+}
+
+.mensajes .drop{
+    display:none;
+}
+
+h6{
+    font-weight: lighter;
+    color:grey;
+}
+.mensaje .mensaje-box {
+    display: flex;
+}
+.mensaje .perfil .avatar {
+    border-radius: 50%;
+    max-width: 50%;
+}
+.mensaje .texto-box .tiempo-mensaje {
+    color: #888;
+    font-size: 10px;
+}
+
+.avatar{
+    display: none;
+}
+
+.mensajes{
+    padding:1rem;
+}
+
+[contenteditable="true"] {
+    border:1px solid #333;
+    color:#cdcfd1;
+    background-color: #f5f7fa;
+    font-size: 90%;
+    font-weight: lighter;
+  }
+
+.mg{
+    transform: scale(1);
+    transition: 0.3s;
+}
+
+.mg:hover{
+    transform: scale(1.3);
+}
+
+.respuestas {
+    display: none;
+    padding-left: 2rem;
+}
+.ver-mas-box {
+    text-align: right;
+}
+
+.reportar-modal{
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+
+.reportar-modal button{
+    width: 30%;
+    align-self: center;
+    margin-top: 1rem;
+}
+
+
+.answer{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+
+}
+
+.botones-respuesta{
+    display: flex;
+    justify-content:space-between;
+    flex-direction: column;
+}
+
+.botones-respuesta .btn-primary{
+    height: 20%;
+}
+
+
+.agregar-imagen{
+    width: 30% !important;
+}
+
+@media screen and (min-width: 47em) {
+    body{
+        font-size: 90%;
+    }
+
+    .header-top img{
+        max-width: 100%;
+    }
+    .nombre-menu p{
+        display: flex;
+    }
+    .mi-perfil{
+        display: flex;
+    }
+
+    .information .padding-margin-0{
+        display:none;
+        
+    }
+    
+    .botones-cabecera{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: flex-end;
+    }
+
+    .botones-respuesta{
+        flex-direction: row;
+    }
+    .botones-respuesta button{
+        margin-top:1rem;
+    }
+    .mensajes .drop{
+        display:inline;
+    }
+    .botones-cabecera .boton{
+        display: inline;    
+    }
+}
+
+@media screen and (min-width: 60em) {
+    body{
+        font-size: 100%;
+    }
+
+    .menu-lateral {
+        background-color: #444;
+        height: 100%;
+        color: white;
+        display: flex;
+        flex-direction: column;
+        flex: 0 1 30%;
+        padding-left: 1rem;
+        padding-top: .5rem;
+    }
+
+    .mi-perfil{
+        display: inline;
+    }
+
+    .avatar{
+        display: inline;
+    }
+
+    .nombre-menu p {
+        display: block;
+    }
+
+    .foro {
+        flex: 0 0 80%;
+        overflow-y: auto;
+    }
+    .information .padding-margin-0{
+        display:flex;
+        
+    }
+
+    .information p{
+        padding-left: .5rem;
+    }
+    .botones-cabecera .boton{
+        display: inline;    
+    }
+
+}

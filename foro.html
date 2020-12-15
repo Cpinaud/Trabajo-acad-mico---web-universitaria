@@ -1,0 +1,758 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
+        integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/foro.css">
+    <link rel="stylesheet" href="css/all.css">
+    <link rel="icon" type="image/ico" href="favicon.ico">
+    <title>Foros MIeL - Materias Interactivas en Línea</title>
+</head>
+
+<body>
+    <header class="sticky-top">
+        <div class="header-top align-middle">
+            <div>
+                <img class="img-fluid" src="img/logo_unlam_34.png" alt="Logo Unlam">
+                <img class="img-fluid" src="img/logo_miel_34.png" alt="Logo Miel">
+            </div>
+            <div class="usuario">
+                <div class="nombre-menu">
+                    <p>MENGANAZO FULANERDO</p>
+                    <ul>
+                        <li class="mi-perfil"><a href="#">Mi perfil</a></li>
+                        <li class="mi-perfil">•</li>
+                        <li><a href="#">Ayuda</a></li>
+                        <li>•</li>
+                        <li><a href="#">Cerrar Sesión</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <img src="img/menganazo.jpg" alt="Perfil" class="img-fluid avatar">
+                </div>
+            </div>
+        </div>
+        <div class="header-bottom">
+            <a href="index.html"><img class="home img-fluid" src="img/home.png" alt="Home"></a>
+            <div class="dropdown">
+                <button class="btn btn-secondary dropdown-toggle drop" type="button" id="dropdownMenuButton"
+                    data-bs-toggle="dropdown" aria-expanded="false">
+                    Visualización e Interfaces(02-5900-2C)
+                </button>
+                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                    <li><a class="dropdown-item" href="#">Materia 1</a></li>
+                    <li><a class="dropdown-item" href="#">Materia 2</a></li>
+                    <li><a class="dropdown-item" href="#">Materia 3</a></li>
+                </ul>
+            </div>
+            <div class="dropdown">
+                <button class="btn btn-secondary dropdown-toggle drop" type="button" id="dropdownMenuButton"
+                    data-bs-toggle="dropdown" aria-expanded="false">
+                    Foros
+                </button>
+                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                    <li><a class="dropdown-item" href="#">Contenidos</a></li>
+                    <li><a class="dropdown-item" href="#">Prácticas</a></li>
+                    <li><a class="dropdown-item" href="#">Mensajería</a></li>
+                    <li><a class="dropdown-item" href="#">Foros</a></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+    <main>
+
+        <div class="menu-lateral">
+            <h2>Foros</h2>
+            <a href="#"><img class="img-fluid" src="img/chat.png" alt="Conversación">General</a>
+            <a href="#"><img class="img-fluid" src="img/chat.png" alt="Conversación">Foro: Presentación</a>
+            <a href="#"><img class="img-fluid" src="img/chat.png" alt="Conversación">Foro: Elección de grupos</a>
+            <a href="#"><img class="img-fluid" src="img/chat.png" alt="Conversación">Foro: Ejercitación</a>
+            <a href="#"><img class="img-fluid" src="img/chat.png" alt="Conversación">Foro: Consultas evaluación</a>
+        </div>
+
+        <div class="foro">
+            <div class="m-2 cabecera">
+                <nav aria-label="breadcrumb">
+                    <ol class="breadcrumb">
+                        <li class="breadcrumb-item"><a href="#">Inicio</a></li>
+                        <li class="breadcrumb-item"><a href="#">Materia</a></li>
+                        <li class="breadcrumb-item"><a href="#">Foros</a></li>
+                        <li class="breadcrumb-item active" aria-current="page">Foro General</li>
+                    </ol>
+                </nav>
+                <div class="row contenido-cabecera">
+                    <div class="col-md-6 col-sm-12 information">
+                        <h1 id="arriba">Tema: General</h1>
+                        <p>Tema para debates y consultas en general. Comisión 02-5900-2C.</p>
+                        <p class="padding-margin-0 mt-2">Último mensaje hace 3 horas.</p>
+                        <p class="padding-margin-0">27 mensajes</p>
+                    </div>
+                    <div class="col-md-6 col-sm-12 botones-cabecera">
+                        <div>
+                            <button class="btn boton">Atrás</button>
+                            <button class="btn boton"><a href="#abajo">Último mensaje</a></button>
+                        </div>
+                        <div class="input-group p-2 buscador">
+                            <input type="text" class="form-control d-inline search"
+                                placeholder="Ingrese el texto buscado..." aria-describedby="basic-addon2">
+                            <button class="btn btn-outline-secondary " type="button">↓</button>
+                            <button class="btn btn-outline-secondary " type="button">↑</button>
+                            <div class="input-group-append">
+                                <button class="btn btn-secondary btn-buscador" type="button"><img src="img/lupa.png"
+                                        alt="lupa"></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="mensajes">
+
+                <div class="dropdown ml-3">
+                    <button class="btn btn-secondary dropdown-toggle drop" type="button" id="dropdownSortButton"
+                        data-bs-toggle="dropdown" aria-expanded="false">
+                        <i class="fas fa-sort-amount-down"></i>
+                        ORDENAR POR
+                    </button>
+                    <ul class="dropdown-menu" aria-labelledby="dropdownSortButton">
+                        <li><a class="dropdown-item" href="#">Mejores comentarios</a></li>
+                        <li><a class="dropdown-item" href="#">Más reciente primero</a></li>
+                    </ul>
+                </div>
+
+                <div class="fixed-action-btn flotante">
+                    <a class="btn-floating"><i class="fas fa-plus-circle"></i></a>
+                </div>
+
+                <div class="mensaje p-2">
+                    <div class="mensaje-box">
+                        <div class="perfil">
+                            <img src="img/profile.jpg" alt="" class="img-fluid avatar">
+                            <p>Candelaria Martinez</p>
+                        </div>
+                        <div class="texto-box">
+                            <div>
+                                <span class="tiempo-mensaje">Hace 2 horas</span>
+                            </div>
+                            <div class="texto">
+                                <p>Hoy no pude asistir a la clase. Alguien me puede pasar lo que vieron?</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="ver-mas-box">
+                        <div>
+                            <button class="btn" type="button" title="Habilitado sólo para administradores"><i
+                                    class="fas fa-thumbtack"></i></button>
+                            <button class="btn mg" type="button"><i class="far fa-thumbs-up text-success"></i></button>
+                            <button class="btn mg" type="button"><i class="far fa-thumbs-down text-danger"></i></button>
+                            <a href="#" class="btn-modal" data-toggle="modal" data-target="#reportar-modal">
+                                Reportar
+                            </a>
+
+                            <!-- Modal -->
+                            <div class="modal fade" id="reportar-modal" tabindex="-1" role="dialog"
+                                aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+                                <div class="modal-dialog" role="document">
+                                    <div class="modal-content">
+                                        <div class="modal-header area-modal">
+                                            <h5 class="modal-title" id="exampleModalLongTitle">Reportar contenido
+                                                inapropiado</h5>
+                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                <span aria-hidden="true">&times;</span>
+                                            </button>
+                                        </div>
+                                        <div class="modal-body area-modal reportar-modal">
+                                            <label for="exampleFormControlTextarea1" class="form-label">Escribe un
+                                                mensaje
+                                                al administrador</label>
+                                            <textarea class="form-control" id="exampleFormControlTextarea1"
+                                                rows="3"></textarea>
+                                            <button type="submit" class="btn btn-primary">Enviar</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="answer">
+                                <a data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false"
+                                    aria-controls="collapseExample">
+                                    Responder
+                                </a>
+                                <p>•</p>
+                                <a href="#" class="ver-mas">2 respuestas ↓</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="collapse" id="collapseExample">
+                        <div class="card card-body">
+                            <form>
+                                <div class="form-group">
+                                    <label for="exampleFormControlTextarea1">Escribe tu respuesta:</label>
+                                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                                </div>
+                                <div class="botones-respuesta">
+                                    <div class="form-group">
+                                        <label for="exampleFormControlFile1"></label>
+                                        <input type="file" class="form-control-file" id="exampleFormControlFile1">
+                                    </div>
+                                    <button type="submit" class="btn btn-primary">Enviar</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="respuestas">
+                        <div class="mensaje p-2">
+                            <div class="mensaje-box">
+                                <div class="perfil">
+                                    <img src="img/menganazo.jpg" alt="" class="img-fluid avatar">
+                                    <p>Menganazo Fulanerdo</p>
+                                </div>
+                                <div class="texto-box">
+                                    <div>
+                                        <span class="tiempo-mensaje">Hace 2 horas</span>
+                                    </div>
+                                    <div class="texto">
+                                        <p id="title1">Estuvimos hablando del Eda2 y vimos Material Design</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="ver-mas-box">
+                                <div>
+                                    <button class="btn mg" type="button" id="editBtn"><i id="editBtnimg"
+                                            class="far fa-edit"></i></button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="mensaje p-2">
+                            <div class="mensaje-box">
+                                <div class="perfil">
+                                    <img src="img/profile.jpg" alt="" class="img-fluid avatar">
+                                    <p>Candelaria Martinez</p>
+                                </div>
+                                <div class="texto-box">
+                                    <div>
+                                        <span class="tiempo-mensaje">Hace 2 horas</span>
+                                    </div>
+                                    <div class="texto">
+                                        <p>Buenísimo, gracias!</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="ver-mas-box">
+                                <div>
+
+                                    <button class="btn mg" type="button"><i
+                                            class="far fa-thumbs-up text-success"></i></button>
+                                    <button class="btn mg" type="button"><i
+                                            class="far fa-thumbs-down text-danger"></i></button>
+                                    <a href="#" class="btn-modal" data-toggle="modal" data-target="#reportar-modal">
+                                        Reportar
+                                    </a>
+
+                                    <!-- Modal -->
+                                    <div class="modal fade" id="reportar-modal" tabindex="-1" role="dialog"
+                                        aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+                                        <div class="modal-dialog" role="document">
+                                            <div class="modal-content">
+                                                <div class="modal-header area-modal">
+                                                    <h5 class="modal-title" id="exampleModalLongTitle">Reportar
+                                                        contenido
+                                                        inapropiado</h5>
+                                                    <button type="button" class="close" data-dismiss="modal"
+                                                        aria-label="Close">
+                                                        <span aria-hidden="true">&times;</span>
+                                                    </button>
+                                                </div>
+                                                <div class="modal-body area-modal reportar-modal">
+                                                    <label for="exampleFormControlTextarea1" class="form-label">Escribe
+                                                        un
+                                                        mensaje
+                                                        al administrador</label>
+                                                    <textarea class="form-control" id="exampleFormControlTextarea1"
+                                                        rows="3"></textarea>
+                                                    <button type="submit" class="btn btn-primary">Enviar</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card card-body">
+                            <form>
+                                <div class="form-group">
+                                    <label for="exampleFormControlTextarea1">Escribe tu respuesta:</label>
+                                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                                </div>
+                                <div class="botones-respuesta">
+
+                                    <div class="form-group">
+                                        <label for="exampleFormControlFile1"></label>
+                                        <input type="file" class="form-control-file" id="exampleFormControlFile1">
+                                    </div>
+
+                                    <button type="submit" class="btn btn-primary">Enviar</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                <div class="mensaje p-2">
+                    <div class="mensaje-box">
+                        <div class="perfil">
+                            <img src="img/menganazo.jpg" alt="" class="img-fluid avatar">
+                            <p>Menganazo Fulanerdo</p>
+                        </div>
+                        <div class="texto-box">
+                            <div>
+                                <span class="tiempo-mensaje">Hace 2 horas</span>
+                            </div>
+                            <div class="texto">
+                                <p id="title2">Buenas! No tengo grupo para el práctico de esta semana. Quien está
+                                    sólo/a?</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="ver-mas-box">
+                        <div>
+                            <button class="btn" type="button" title="Habilitado sólo para administradores"><i
+                                    class="fas fa-thumbtack"></i></button>
+                            <button class="btn mg" type="button" id="editBtn1"><i id="editBtnimg1"
+                                    class="far fa-edit"></i></button>
+
+                        </div>
+                        <div class="answer">
+                            <a data-bs-toggle="collapse" href="#collapseExample1" role="button" aria-expanded="false"
+                                aria-controls="collapseExample">
+                                Responder
+                            </a>
+                            <p>•</p>
+                            <a href="#" class="ver-mas">3 respuestas ↓</a>
+                        </div>
+                    </div>
+                    <div class="collapse" id="collapseExample1">
+                        <div class="card card-body">
+                            <form>
+                                <div class="form-group">
+                                    <label for="exampleFormControlTextarea1">Escribe tu respuesta:</label>
+                                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                                </div>
+                                <div class="botones-respuesta">
+
+                                    <div class="form-group">
+                                        <label for="exampleFormControlFile1"></label>
+                                        <input type="file" class="form-control-file" id="exampleFormControlFile1">
+                                    </div>
+
+                                    <button type="submit" class="btn btn-primary">Enviar</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="respuestas">
+                        <div class="mensaje p-2">
+                            <div class="mensaje-box">
+                                <div class="perfil">
+                                    <img src="img/profile.jpg" alt="" class="img-fluid avatar">
+                                    <p>Miguel Ángel</p>
+                                </div>
+                                <div class="texto-box">
+                                    <div>
+                                        <span class="tiempo-mensaje">Hace 2 horas</span>
+                                    </div>
+                                    <div class="texto">
+                                        <p>Hola. Yo estoy sólo.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="ver-mas-box">
+                                <div>
+                                    <button class="btn mg" type="button"><i
+                                            class="far fa-thumbs-up text-success"></i></button>
+                                    <button class="btn mg" type="button"><i
+                                            class="far fa-thumbs-down text-danger"></i></button>
+                                    <a href="#" class="btn-modal" data-toggle="modal" data-target="#reportar-modal">
+                                        Reportar
+                                    </a>
+
+                                    <!-- Modal -->
+                                    <div class="modal fade" id="reportar-modal" tabindex="-1" role="dialog"
+                                        aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+                                        <div class="modal-dialog" role="document">
+                                            <div class="modal-content">
+                                                <div class="modal-header area-modal">
+                                                    <h5 class="modal-title" id="exampleModalLongTitle">Reportar
+                                                        contenido
+                                                        inapropiado</h5>
+                                                    <button type="button" class="close" data-dismiss="modal"
+                                                        aria-label="Close">
+                                                        <span aria-hidden="true">&times;</span>
+                                                    </button>
+                                                </div>
+                                                <div class="modal-body area-modal reportar-modal">
+                                                    <label for="exampleFormControlTextarea1" class="form-label">Escribe
+                                                        un
+                                                        mensaje
+                                                        al administrador</label>
+                                                    <textarea class="form-control" id="exampleFormControlTextarea1"
+                                                        rows="3"></textarea>
+                                                    <button type="submit" class="btn btn-primary">Enviar</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="mensaje p-2">
+                            <div class="mensaje-box">
+                                <div class="perfil">
+                                    <img src="img/menganazo.jpg" alt="" class="img-fluid avatar">
+                                    <p>Menganazo Fulanerdo</p>
+                                </div>
+                                <div class="texto-box">
+                                    <div>
+                                        <span class="tiempo-mensaje">Hace 2 horas</span>
+                                    </div>
+                                    <div class="texto">
+                                        <p id="title3">Ok. Hacemos grupo entonces</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="ver-mas-box">
+                                <div>
+                                    <button class="btn mg" type="button" id="editBtn2"><i id="editBtnimg2"
+                                            class="far fa-edit"></i></button>
+
+                                </div>
+                            </div>
+                            <div class="respuestas">
+                            </div>
+                        </div>
+                        <div class="mensaje p-2">
+                            <div class="mensaje-box">
+                                <div class="perfil">
+                                    <img src="img/profile.jpg" alt="" class="img-fluid avatar">
+                                    <p>Sofía Rivero</p>
+                                </div>
+                                <div class="texto-box">
+                                    <div>
+                                        <span class="tiempo-mensaje">Hace 2 horas</span>
+                                    </div>
+                                    <div class="texto">
+                                        <p>Yo no tengo grupo tampoco. Me puedo sumar a ustedes?</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="ver-mas-box">
+                                <div>
+                                    <button class="btn mg" type="button"><i
+                                            class="far fa-thumbs-up text-success"></i></button>
+                                    <button class="btn mg" type="button"><i
+                                            class="far fa-thumbs-down text-danger"></i></button>
+                                    <a href="#" class="btn-modal" data-toggle="modal" data-target="#reportar-modal">
+                                        Reportar
+                                    </a>
+
+                                    <!-- Modal -->
+                                    <div class="modal fade" id="reportar-modal" tabindex="-1" role="dialog"
+                                        aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+                                        <div class="modal-dialog" role="document">
+                                            <div class="modal-content">
+                                                <div class="modal-header area-modal">
+                                                    <h5 class="modal-title" id="exampleModalLongTitle">Reportar
+                                                        contenido
+                                                        inapropiado</h5>
+                                                    <button type="button" class="close" data-dismiss="modal"
+                                                        aria-label="Close">
+                                                        <span aria-hidden="true">&times;</span>
+                                                    </button>
+                                                </div>
+                                                <div class="modal-body area-modal reportar-modal">
+                                                    <label for="exampleFormControlTextarea1" class="form-label">Escribe
+                                                        un
+                                                        mensaje
+                                                        al administrador</label>
+                                                    <textarea class="form-control" id="exampleFormControlTextarea1"
+                                                        rows="3"></textarea>
+                                                    <button type="submit" class="btn btn-primary">Enviar</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card card-body">
+                            <form>
+                                <div class="form-group">
+                                    <label for="exampleFormControlTextarea1">Escribe tu respuesta:</label>
+                                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                                </div>
+                                <div class="botones-respuesta">
+
+                                    <div class="form-group">
+                                        <label for="exampleFormControlFile1"></label>
+                                        <input type="file" class="form-control-file" id="exampleFormControlFile1">
+                                    </div>
+
+                                    <button type="submit" class="btn btn-primary">Enviar</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="mensaje p-2">
+                    <div class="mensaje-box">
+                        <div class="perfil">
+                            <img src="img/profile.jpg" alt="" class="img-fluid avatar">
+                            <p>Miguel Ángel</p>
+                        </div>
+                        <div class="texto-box">
+                            <div>
+                                <span class="tiempo-mensaje">Hace 4 horas</span>
+                            </div>
+                            <div class="texto">
+                                <p>Hola! Alguien sabe cuál es el video ¿Qué es una interfaz intuitiva de Mordecki?</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="ver-mas-box">
+                        <div>
+                            <button class="btn" type="button" title="Habilitado sólo para administradores"><i
+                                    class="fas fa-thumbtack"></i></button>
+                            <button class="btn mg" type="button"><i class="far fa-thumbs-up text-success"></i></button>
+                            <button class="btn mg" type="button"><i class="far fa-thumbs-down text-danger"></i></button>
+
+                            <a href="#" class="btn-modal" data-toggle="modal" data-target="#reportar-modal">
+                                Reportar
+                            </a>
+
+                            <!-- Modal -->
+                            <div class="modal fade" id="reportar-modal" tabindex="-1" role="dialog"
+                                aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+                                <div class="modal-dialog" role="document">
+                                    <div class="modal-content">
+                                        <div class="modal-header area-modal">
+                                            <h5 class="modal-title" id="exampleModalLongTitle">Reportar contenido
+                                                inapropiado</h5>
+                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                <span aria-hidden="true">&times;</span>
+                                            </button>
+                                        </div>
+                                        <div class="modal-body area-modal reportar-modal">
+                                            <label for="exampleFormControlTextarea1" class="form-label">Escribe un
+                                                mensaje
+                                                al administrador</label>
+                                            <textarea class="form-control" id="exampleFormControlTextarea1"
+                                                rows="3"></textarea>
+                                            <button type="submit" class="btn btn-primary">Enviar</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="answer">
+                                <a data-bs-toggle="collapse" href="#collapseExample2" role="button"
+                                    aria-expanded="false" aria-controls="collapseExample">
+                                    Responder
+                                </a>
+                                <p>•</p>
+                                <a href="#" class="ver-mas">1 respuesta ↓</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="collapse" id="collapseExample2">
+                        <div class="card card-body">
+                            <form>
+                                <div class="form-group">
+                                    <label for="exampleFormControlTextarea1">Escribe tu respuesta:</label>
+                                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                                </div>
+                                <div class="botones-respuesta">
+
+                                    <div class="form-group">
+                                        <label for="exampleFormControlFile1"></label>
+                                        <input type="file" class="form-control-file" id="exampleFormControlFile1">
+                                    </div>
+
+                                    <button type="submit" class="btn btn-primary">Enviar</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="respuestas">
+                        <div class="mensaje p-2">
+                            <div class="mensaje-box">
+                                <div class="perfil">
+                                    <img src="img/profile.jpg" alt="" class="img-fluid avatar">
+                                    <p>Heliana Vera</p>
+                                    <h6>Profesora</h6>
+                                </div>
+                                <div class="texto-box">
+                                    <div>
+                                        <span class="tiempo-mensaje">Hace 2 horas</span>
+                                    </div>
+                                    <div class="texto">
+                                        <p>Hola Miguel! Abajo podés ver el video que estás buscando. Saludos</p>
+                                    </div>
+                                    <div class="embed-responsive embed-responsive-16by9 video">
+                                        <iframe class="embed-responsive-item"
+                                            src="https://www.youtube.com/embed/ZpqFNYGLTOM" allowfullscreen></iframe>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="ver-mas-box">
+                                <div>
+                                    <button class="btn mg" type="button"><i
+                                            class="far fa-thumbs-up text-success"></i></button>
+                                    <button class="btn mg" type="button"><i
+                                            class="far fa-thumbs-down text-danger"></i></button>
+                                    <a href="#" class="btn-modal" data-toggle="modal" data-target="#reportar-modal">
+                                        Reportar
+                                    </a>
+
+                                    <!-- Modal -->
+                                    <div class="modal fade" id="reportar-modal" tabindex="-1" role="dialog"
+                                        aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+                                        <div class="modal-dialog" role="document">
+                                            <div class="modal-content">
+                                                <div class="modal-header area-modal">
+                                                    <h5 class="modal-title" id="exampleModalLongTitle">Reportar
+                                                        contenido
+                                                        inapropiado</h5>
+                                                    <button type="button" class="close" data-dismiss="modal"
+                                                        aria-label="Close">
+                                                        <span aria-hidden="true">&times;</span>
+                                                    </button>
+                                                </div>
+                                                <div class="modal-body area-modal reportar-modal">
+                                                    <label for="exampleFormControlTextarea1" class="form-label">Escribe
+                                                        un
+                                                        mensaje
+                                                        al administrador</label>
+                                                    <textarea class="form-control" id="exampleFormControlTextarea1"
+                                                        rows="3"></textarea>
+                                                    <button type="submit" class="btn btn-primary">Enviar</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card card-body">
+                            <form>
+                                <div class="form-group">
+                                    <label for="exampleFormControlTextarea1">Escribe tu respuesta:</label>
+                                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                                </div>
+                                <div class="botones-respuesta">
+
+                                    <div class="form-group">
+                                        <label for="exampleFormControlFile1"></label>
+                                        <input type="file" class="form-control-file" id="exampleFormControlFile1">
+                                    </div>
+
+                                    <button type="submit" class="btn btn-primary">Enviar</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="final" id="abajo">
+                <button class="btn boton primero"><a href="#arriba">Primer mensaje</a></button>
+            </div>
+        </div>
+        
+    </main>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW"
+        crossorigin="anonymous"></script>
+    <script type="text/javascript">
+        $(document).ready(() => {
+            $('.ver-mas').on('click', function (e) {
+                e.preventDefault();
+                $(this).parents(".mensaje").children(".respuestas").toggle();
+            });
+
+        });
+    </script>
+    <script type="text/javascript">
+        var editBtn = document.getElementById('editBtn');
+        var editBtn1 = document.getElementById('editBtn1');
+        var editBtn2 = document.getElementById('editBtn2');
+        var editBtnimg = document.getElementById('editBtnimg');
+        var editables = document.querySelectorAll('#title1, #title2, #title3')
+
+        editBtn.addEventListener('click', function (e) {
+            if (!editables[0].isContentEditable) {
+                editables[0].contentEditable = 'true';
+                editBtn.innerHTML = "Guardar";
+                editBtnimg.getElementById("editBtnimg").style.display = "none";
+
+            } else {
+                // Disable Editing
+                editables[0].contentEditable = 'false';
+                editBtn.innerHTML = " ";
+                // Save the data in localStorage 
+                for (var i = 0; i < editables.length; i++) {
+                    localStorage.setItem(editables[i].getAttribute('id'), editables[i].innerHTML);
+                }
+            }
+        });
+        editBtn1.addEventListener('click', function (e) {
+            if (!editables[1].isContentEditable) {
+                editables[1].contentEditable = 'true';
+                editBtn1.innerHTML = "Guardar";
+                editBtnimg1.getElementById("editBtnimg1").style.display = "none";
+
+            } else {
+                // Disable Editing
+                editables[1].contentEditable = 'false';
+                editBtn1.innerHTML = " ";
+                // Save the data in localStorage 
+                for (var i = 0; i < editables.length; i++) {
+                    localStorage.setItem(editables[i].getAttribute('id'), editables[i].innerHTML);
+                }
+            }
+        });
+        editBtn2.addEventListener('click', function (e) {
+            if (!editables[2].isContentEditable) {
+                editables[2].contentEditable = 'true';
+                editBtn2.innerHTML = "Guardar";
+                editBtnimg2.getElementById("editBtnimg2").style.display = "none";
+
+            } else {
+                // Disable Editing
+                editables[2].contentEditable = 'false';
+                editbtn2.innerHTML = " ";
+                editBtn2.innerHTML = " ";
+                // Save the data in localStorage 
+                for (var i = 0; i < editables.length; i++) {
+                    localStorage.setItem(editables[i].getAttribute('id'), editables[i].innerHTML);
+                }
+            }
+        });
+
+    </script>
+</body>
+
+</html>
